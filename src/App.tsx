@@ -9,6 +9,10 @@ function App() {
   console.log("VITE_CLIENT_USERNAME = ", import.meta.env.VITE_CLIENT_USERNAME)
   console.log("REACT_APP_SERVER_USERNAME = ", import.meta.env.REACT_APP_SERVER_USERNAME)
 
+  if (import.meta.env.PROD) {
+    console.log("FOR IN PROD", process.env.REACT_APP_SERVER_USERNAME)
+  }
+
   return (
     <>
       <div>
