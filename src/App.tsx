@@ -10,6 +10,8 @@ function App() {
   console.log("REACT_APP_SERVER_USERNAME = ", import.meta.env.REACT_APP_SERVER_USERNAME)
 
   if (import.meta.env.PROD) {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
     console.log("FOR IN PROD", process.env.REACT_APP_SERVER_USERNAME)
   }
 
