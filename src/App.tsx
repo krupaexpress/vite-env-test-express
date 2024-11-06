@@ -11,8 +11,6 @@ function App() {
   console.log("ENV_KEY = ", import.meta.env.ENV_KEY)
 
   if (import.meta.env.PROD) {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-expect-error
     console.log("FOR IN PROD", process.env.REACT_APP_SERVER_USERNAME)
   }
 
