@@ -8,6 +8,7 @@ function App() {
   
   console.log("VITE_CLIENT_USERNAME = ", import.meta.env.VITE_CLIENT_USERNAME)
   console.log("REACT_APP_SERVER_USERNAME = ", import.meta.env.REACT_APP_SERVER_USERNAME)
+  console.log("ENV_KEY = ", import.meta.env.ENV_KEY)
 
   if (import.meta.env.PROD) {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
