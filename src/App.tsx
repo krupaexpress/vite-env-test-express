@@ -6,12 +6,12 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
   
-  console.log("VITE_CLIENT_USERNAME = ", import.meta.env.VITE_CLIENT_USERNAME)
-  console.log("REACT_APP_SERVER_USERNAME = ", import.meta.env.REACT_APP_SERVER_USERNAME)
-  console.log("ENV_KEY = ", import.meta.env.ENV_KEY)
+  console.log("VITE_CLIENT_USERNAME = ", import.meta.env.VITE_CLIENT_USERNAME) // 1
+  console.log("REACT_APP_SERVER_USERNAME = ", import.meta.env.REACT_APP_SERVER_USERNAME) // undefined
+  console.log("ENV_KEY = ", import.meta.env.ENV_KEY) // undefined
 
   if (import.meta.env.PROD) {
-    console.log("FOR IN PROD", process.env.REACT_APP_SERVER_USERNAME)
+    console.log("FOR IN PROD", process.env.REACT_APP_SERVER_USERNAME) // 2
   }
 
   return (
